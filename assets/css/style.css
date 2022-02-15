@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none;    /* Firefox all             */
+    -ms-user-select: none;     /* Internet Explorer  10+  */
+     user-select: none; 
+}
+/* common */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.mg-10 {
+    margin: 10px;
+}
+/* style app */
+.player {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 480px;
+    border: 1px solid #e4dfdb;
+    align-self: center;
+}
+.dashboard {
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    padding-bottom: 10px;
+}
+.status {
+    color:rgb(224, 167, 96)
+}
+.cd img {
+    border-radius: 50%;
+    width: 200px;
+    margin: auto;
+}
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.handle {
+    margin-top: 10px;
+}
+.handle .btn {
+    padding: 15px;
+    cursor: pointer;
+}
+.btn-toggle-play {
+    color: rgb(224, 167, 96);
+}
+.active {
+    color: rgb(224, 167, 96);
+}
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.time .left,.right {
+    padding: 10px;
+    opacity: .5;
+}
+#progress {
+    -webkit-appearance: none;
+    width: 60%;
+    align-self: center;
+    background: rgba(148, 147, 147, 0.932);
+    height: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(224, 167, 96);
+    cursor: pointer;
+  }
+audio {
+    display: none;
+}
+.playlist {
+    margin-top: 484px;
+    width: 100%;
+    max-width: 480px;
+    background: rgba(241, 241, 241, 0.932);
+    border: 1px solid #e4dfdb;
+}
+.song .thumb {
+    margin: 0px 20px 0px 16px;
+}
+.song img {
+    border-radius: 50%;
+}
+.song h3 {
+    margin: 20px 0 5px 0;
+}
+.song-active {
+    background-color: rgb(224, 167, 96);
+    color: white;
+}
+.song  {
+    cursor: pointer;
+    display: flex;
+    height: 80px;
+    width: 90%;
+    border-radius: 10px;
+    align-self: center;
+    margin: 10px 0px 0px 20px;
+    border: 1px solid rgba(230, 227, 227, 0.932);
+}
+
